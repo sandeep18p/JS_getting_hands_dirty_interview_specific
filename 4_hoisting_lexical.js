@@ -1,7 +1,9 @@
 // https://www.youtube.com/watch?v=efpmNYgjbgs&list=PL-Jc9J83PIiFU_evuYnTGHVXU_LeZryNP&index=5
 
-// Note 1)  16:19 Lexical Scope:- hamesha function defination ke outside, 
-// Note 2) 18:41
+// Note 1)  15:30 Lexical Scope:- hamesha function defination ke outside dekhenge apan function call ka outside nhi dekhenge
+// Note 2) 18:41 Important Lexical scope definition
+// Note 3) lexical outside important
+// Note 4) Scope chain
 
 console.log("line number 1", varName); 
 var varName = 10;
