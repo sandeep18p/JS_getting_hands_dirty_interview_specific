@@ -7,4 +7,4 @@ function sum(num) {
     return func;
 } 
 
-sum(5)(-1)(2) == 6
+console.log(sum(5)(-1)(2) == 6);
