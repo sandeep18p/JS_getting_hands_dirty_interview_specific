@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=efpmNYgjbgs&list=PL-Jc9J83PIiFU_evuYnTGHVXU_LeZryNP&index=5
+
 console.log('var ',run);
 var run=10;
 
@@ -22,6 +24,9 @@ function c(){
 // The subsequent console.log('Inside c after initialization', run); will output 10, as it's now accessing the locally initialized run variable.
 
 }
+function d(){
+    console.log(name);  // this will give error
+}
 
 function fn(){
     console.log('var 3',run); //here it will be undefined because here new hoisted gets created run will be undefined at the top of inside this fn i
@@ -29,7 +34,8 @@ function fn(){
     b();
     console.log('var 4',run);
     c();
-}
+    d();
+} 
 
 fn();
 
