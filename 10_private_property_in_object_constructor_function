@@ -1,0 +1,14 @@
+// Using closures for private properties
+function Car(make, model) {
+    let _make = make;     // Private property
+    let _model = model;   // Private property
+
+    // Public method to access private properties
+    this.display = function() {
+        return `${_make} ${_model}`;
+    };
+}
+
+let myCar = new Car('Toyota', 'Camry');
+console.log(myCar._make);   // Undefined (cannot access private property directly)
+console.log(myCar.display()); // Outputs: Toyota Camry
